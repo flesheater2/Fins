@@ -38,7 +38,7 @@ for x in np.arange(0,Lc,0.01):
     t2 = float(sp.cosh(m*(Lc-x)))
     t3 = float(sp.cosh(m*(Lc)))
     t4 = float(t1*t2)
-    tempGrad = float(t4/t3)
+    tempGrad = float((t4/t3)+Ta_val)
     x_axis.append(x)
     y_axis.append(tempGrad)
     print(t1)
